@@ -28,6 +28,10 @@ app.get('/callback', async (req, res) => {
   }
 })
 
+app.get('/', (req, res) => {
+  res.send('Servidor corriendo correctamente desde Render.');
+});
+
 app.listen(PORT, '0.0.0.0', () => {
   console.log('Iniciando aplicación...');
 })
